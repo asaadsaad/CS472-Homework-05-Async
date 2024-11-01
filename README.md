@@ -1,6 +1,6 @@
 ## CS472-Homework-05-Async
 ## Coding Exercise 01
-Implement the code for `Meditation` class to be used as follows:
+Implement the code for `Meditation` class. The `start()` method prints a countdown every 1 second. To be used as follows:
 ```typescript
 const morning_meditation = new Meditation(5);
 morning_meditation.start();
@@ -38,7 +38,7 @@ console.log('end');
 // end
 // { prime: true }
 ```
-Make changes to provided test and use `async`/`await` instead of `.then()` and `.catch()`
+Make changes to the provided test and use `async`/`await` instead of `.then()` and `.catch()`
 
 ## Coding Exercise 03
 Write an IIFE that fetch recipes from `https://dummyjson.com/recipes` and print to the console a list of recipe names.  
