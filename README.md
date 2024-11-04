@@ -41,5 +41,11 @@ console.log('end');
 Make changes to the provided test and use `async`/`await` instead of `.then()` and `.catch()`
 
 ## Coding Exercise 03
-Write an IIFE that fetch recipes from `https://dummyjson.com/recipes` and print to the console a list of recipe names.  
+Using Fetch API, write functions that implement the following CRUD operations on the products API from `https://dummyjson.com/products`:
+* Get all products: `get_products(skip: number = 0, limit: number = 30)` Print list of product titles only, with pagination (30 products each page). Use [limit and skip](https://dummyjson.com/docs/products#products-limit_skip) query parameters.
+* Get a single product: `get_product(id: number)` Print JSON with `{title, description, category, price}`.
+* Add a new product: `add_product(product: Partial<Product>)` return `{ok: boolean}`
+* Update a product title: `update_product_title(id: number, new_title: string)` return `{ok: boolean}`
+* Delete a product: `delete_product(id: number)` return `{ok: boolean}`
+  
 Make sure you [type the response](https://transform.tools/json-to-typescript). 
